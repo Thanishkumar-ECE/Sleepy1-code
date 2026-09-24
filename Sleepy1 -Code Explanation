@@ -1,0 +1,31 @@
+# ESP32 Gas Detection and Automatic Fan Control
+
+## About
+This project uses an ESP32 with MQ2 and MQ135 gas sensors
+to monitor gas levels and automatically control a PWM fan.
+
+## Features
+- Monitors MQ2 and MQ135 sensors
+- Automatically increases fan speed when gas levels are high
+- Sends sensor readings to Raspberry Pi using UART
+- Data is transmitted every 3 seconds
+
+## Hardware
+- ESP32
+- MQ2 Gas Sensor
+- MQ135 Gas Sensor
+- PWM Fan
+- Raspberry Pi
+
+## Pin Connections
+- MQ2 → GPIO34
+- MQ135 → GPIO35
+- Fan → GPIO21
+- ESP32 TX2 → GPIO17
+
+## Communication
+Baud Rate: 115200
+
+Example:
+MQ2:875
+MQ135:640
